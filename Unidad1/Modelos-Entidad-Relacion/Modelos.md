@@ -310,4 +310,3 @@ enunciados proporcionados en clase.
 ---
 
 ⬅️ [Volver a la Unidad 1](../Unidad1.md)
-⬅️ [Volver a la Unidad 1](../Unidad1.md)
