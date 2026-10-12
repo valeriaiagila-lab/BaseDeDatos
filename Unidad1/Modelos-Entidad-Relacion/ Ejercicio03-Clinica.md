@@ -31,7 +31,7 @@ Las entidades identificadas en el sistema son las siguientes:
 | Paciente - Cita | Un paciente puede solicitar varias citas y cada cita corresponde a un paciente. | Uno a muchos (1:N). |
 | Médico - Cita | Un médico puede atender varias citas y cada cita es atendida por un médico. | Uno a muchos (1:N). |
 | Especialidad - Médico | Una especialidad puede estar relacionada con varios médicos y cada médico pertenece a una especialidad. | Uno a muchos (1:N). |
-| Cita - Receta | Una cita puede generar una receta y cada receta corresponde a una cita. | Uno a uno (1:0..1), si se permite una sola receta por cita. |
+| Cita - Receta | Una cita puede generar una receta y cada receta corresponde a una cita. | Uno a uno (1:0..1). |
 | Receta - Medicamento | Una receta puede incluir varios medicamentos y un medicamento puede aparecer en diferentes recetas. | Muchos a muchos (N:M). |
 
 ### Análisis de las relaciones
@@ -39,7 +39,7 @@ Las entidades identificadas en el sistema son las siguientes:
 - **Paciente - Cita:** Un paciente puede acudir a diferentes citas médicas, pero cada cita corresponde a un único paciente.
 - **Médico - Cita:** Un médico puede atender varias citas, mientras que cada cita es atendida por un médico.
 - **Especialidad - Médico:** Una especialidad puede agrupar a varios médicos y cada médico pertenece a una especialidad.
-- **Cita - Receta:** Algunas citas generan recetas médicas. La relación puede ser de uno a uno si cada cita genera como máximo una receta; si puede generar varias, será de uno a muchos (1:0..1).
+- **Cita - Receta:** Una cita puede generar una receta médica o no generar ninguna, y cada receta corresponde a una única cita. **Cardinalidad:** Uno a cero o uno (1:0..1).
 - **Receta - Medicamento:** Es una relación de muchos a muchos, porque una receta puede incluir varios medicamentos y un medicamento puede aparecer en distintas recetas. Se representa mediante la entidad intermedia `Detalle_Receta`, que almacena la dosis y la duración del tratamiento.
 
 ## 4. Diagrama Entidad-Relación
