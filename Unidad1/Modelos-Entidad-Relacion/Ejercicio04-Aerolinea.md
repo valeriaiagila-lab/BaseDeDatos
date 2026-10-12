@@ -6,7 +6,7 @@
 
 ## 1. Análisis del problema
 
-Una aerolínea opera vuelos (cada uno con número, fecha, origen y destino), cada vuelo lo realiza un avión. Los pasajeros realizan reservas para un vuelo específico, indicando asiento y tarifa pagada en el momento de la reserva.<img width="752" height="304" alt="Aeorolínea" src="https://github.com/user-attachments/assets/9e27386d-16f2-47ef-aee1-82f33dd3b36d" />
+Una aerolínea opera vuelos (cada uno con número, fecha, origen y destino), cada vuelo lo realiza un avión. Los pasajeros realizan reservas para un vuelo específico, indicando asiento y tarifa pagada en el momento de la reserva.
 
 
 ## 2. Identificación de entidades y atributos
