@@ -8,6 +8,7 @@ Repositorio académico de la asignatura **Base de Datos**, correspondiente a la 
 |---|---|
 | **Universidad** | Universidad Nacional de Loja (UNL) |
 | **Facultad** | Facultad de la Energía, las Industrias y los Recursos Naturales No Renovables |
+| **Nombre** | Valeria Idaly Agila Gomez |
 | **Carrera** | Computación |
 | **Asignatura** | Base de Datos |
 | **Ciclo** | Tercero |
@@ -72,22 +73,42 @@ Organizar y documentar las actividades académicas de la asignatura, aplicando l
 
 La siguiente estructura es una propuesta inicial que se puede adaptar conforme se desarrollen las prácticas y actividades de la asignatura.
 
+
+
+## 📂 Estructura del repositorio
+
 ```text
 base-de-datos/
-├── unidad-1-relacionales/
-│   ├── modelos-er/
-│   ├── modelos-relacionales/
-│   └── consultas-sql/
-├── unidad-2-nosql/
-│   ├── mongodb/
-│   ├── redis/
-│   └── neo4j/
-├── unidad-3-ciencia-de-datos/
-│   ├── limpieza-de-datos/
-│   ├── estadistica/
-│   └── visualizacion/
+│
+├── unidad-1-base-de-datos-relacionales/
+│   ├── fundamentos-de-los-sistemas-de-bases-de-datos-relacionales/
+│   ├── modelado-de-datos-relacionales/
+│   ├── algebra-relacional/
+│   ├── lenguaje-sql/
+│   ├── optimizacion-y-administracion/
+│   └── bases-de-datos-distribuidas-y-replicacion/
+│
+├── unidad-3-base-de-datos-no-relacionales/
+│   ├── caracteristicas-generales-de-nosql/
+│   ├── paradigmas-nosql/
+│   ├── categorias-de-bases-de-datos-no-relacionales/
+│   ├── gestores-nosql/
+│   │   ├── redis/
+│   │   ├── mongodb/
+│   │   ├── apache-cassandra/
+│   │   ├── neo4j/
+│   │   └── amazon-dynamodb/
+│   └── servicios-de-bases-de-datos-en-cloud-computing/
+│
+├── unidad-3-fundamentos-a-la-ciencia-de-datos/
+│   ├── datos-para-ciencia-de-datos/
+│   ├── herramientas-de-ciencia-de-datos/
+│   ├── visualizacion-de-datos/
+│   └── aplicaciones-practicas/
+│
 └── README.md
 ```
+
 
 ## 📝 Actividades académicas
 
@@ -103,33 +124,6 @@ En este repositorio se podrán almacenar:
 - Gráficos y resultados de las actividades.
 - Documentación de los proyectos desarrollados.
 
-## 🚀 Clonar el repositorio
-
-Para obtener una copia local del repositorio, ejecuta los siguientes comandos en una terminal:
-
-```bash
-git clone URL_DEL_REPOSITORIO
-cd base-de-datos
-```
-
-**Nota:** Reemplaza `URL_DEL_REPOSITORIO` por la dirección real de tu repositorio de GitHub.
-
-## 🌿 Trabajo colaborativo
-
-Para mantener organizadas las actividades y los cambios realizados en el repositorio, se utilizará Git para el control de versiones.
-
-```bash
-# Revisar los archivos modificados
-git status
-
-# Agregar los cambios
-git add .
-
-# Guardar los cambios
-git commit -m "Descripción de los cambios"
-
-# Enviar los cambios a GitHub
-git push
 ```
 
 ## 👩‍💻 Autora
