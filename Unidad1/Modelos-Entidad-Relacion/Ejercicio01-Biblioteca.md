@@ -28,7 +28,7 @@ Las entidades identificadas a partir del enunciado son las siguientes:
 |---|---|---|
 | Libro - Autor | Un libro puede tener varios autores y un autor puede escribir varios libros. | Muchos a muchos (N:M). |
 | Socio - Préstamo | Un socio puede realizar varios préstamos y cada préstamo corresponde a un socio. | Uno a muchos (1:N). |
-| Libro - Préstamo | Permite identificar los libros asociados a los préstamos realizados. | Depende de las reglas de la biblioteca. |
+| Libro - Préstamo | Un préstamo puede incluir varios libros y un libro puede estar asociado a diferentes préstamos. | Muchos a muchos (N:M). |
 
 ### Análisis de las relaciones
 
