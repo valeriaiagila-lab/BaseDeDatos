@@ -8,7 +8,7 @@
 ### 📘 Asignatura: Base de Datos  
 ### 🕓 Ciclo: 3  
 ### 📅 Período Académico: 2025 - 2026  
-### 👩‍🏫 Docente: Ing. Lessette Geoconda López Faicán  
+### 👩‍🏫 Docente: Ing. Edwin René Guamán Quinche
 ### 👩‍🎓 Estudiante: Valeria Idaly Agila Gómez  
 
 ## ○ Unidad 1
