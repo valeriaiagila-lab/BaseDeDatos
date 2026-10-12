@@ -52,7 +52,7 @@ El diagrama representa las entidades principales de la clínica, sus relaciones 
 
 El modelo entidad-relación permite organizar la información de los pacientes, médicos, citas y recetas de una clínica. También facilita la administración de las especialidades médicas y de los medicamentos prescritos.
 
-Además, la entidad `Detalle_Receta` permite registrar la dosis y duración de cada medicamento dentro de una receta, manteniendo organizadas las indicaciones de los tratamientos médicos.
+
 
 ---
 
