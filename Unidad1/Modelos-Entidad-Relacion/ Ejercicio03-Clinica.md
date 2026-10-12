@@ -40,7 +40,7 @@ Las entidades identificadas en el sistema son las siguientes:
 - **Médico - Cita:** Un médico puede atender varias citas, mientras que cada cita es atendida por un médico.
 - **Especialidad - Médico:** Una especialidad puede agrupar a varios médicos y cada médico pertenece a una especialidad.
 - **Cita - Receta:** Una cita puede generar una receta médica o no generar ninguna, y cada receta corresponde a una única cita. **Cardinalidad:** Uno a cero o uno (1:0..1).
-- **Receta - Medicamento:** Es una relación de muchos a muchos, porque una receta puede incluir varios medicamentos y un medicamento puede aparecer en distintas recetas. Se representa mediante la entidad intermedia `Detalle_Receta`, que almacena la dosis y la duración del tratamiento.
+- **Receta - Medicamento:** Es una relación de muchos a muchos, porque una receta puede incluir varios medicamentos y un medicamento puede aparecer en distintas recetas. 
 
 ## 4. Diagrama Entidad-Relación
 
