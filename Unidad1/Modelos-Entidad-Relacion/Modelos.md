@@ -284,15 +284,30 @@ relacional.
 
 ---
 
-## ✏️ 9. Ejercicios prácticos
+# ✏️ Ejercicios prácticos: Modelo Entidad-Relación
 
-En esta sección se incorporarán los ejercicios realizados
-durante las clases sobre modelos entidad-relación.
+En esta sección se recopilan los ejercicios de aplicación
+del modelo entidad-relación, desarrollados a partir de los
+enunciados proporcionados en clase.
 
-- [📝 Ejercicio 1](Ejercicio01.md)
-- [📝 Ejercicio 2](Ejercicio02.md)
-- [📝 Ejercicio 3](Ejercicio03.md)
+## 📘 Ejemplos
+
+1. [📚 Sistema de Biblioteca](Ejercicio01-Biblioteca.md)
+2. [🍽️ Pedidos de Restaurante](Ejercicio02-Restaurante.md)
+3. [🏥 Clínica Médica](Ejercicio03-Clinica.md)
+4. [✈️ Sistema de Aerolínea](Ejercicio04-Aerolinea.md)
+
+## 📝 Ejercicios propuestos
+
+5. [🎵 Empresa Discográfica](Ejercicio05-Discografica.md)
+6. [💻 Tienda Informática](Ejercicio06-Tienda-Informatica.md)
+7. [💿 Discos Musicales](Ejercicio07-Discos-Musicales.md)
+8. [🚚 Camiones](Ejercicio08-Camiones.md)
+9. [🐾 Veterinaria](Ejercicio09-Veterinaria.md)
+10. [🏢 Empresa: Empleados y Proyectos](Ejercicio10-Empresa.md)
+11. [🎓 Universidad: Prerrequisitos entre Cursos](Ejercicio11-Universidad.md)
 
 ---
 
+⬅️ [Volver a la Unidad 1](../Unidad1.md)
 ⬅️ [Volver a la Unidad 1](../Unidad1.md)
