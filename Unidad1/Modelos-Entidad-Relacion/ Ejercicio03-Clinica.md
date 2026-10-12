@@ -16,15 +16,14 @@ Cada cita debe registrar la fecha, hora y consultorio en el que se atiende al pa
 Las entidades identificadas en el sistema son las siguientes:
 
 | Entidad | Descripción |
-|---|---|---|
-| Paciente | Representa a las personas que solicitan atención médica. | 
-| Médico | Representa a los profesionales que atienden las citas. | 
+|---|---|
+| Paciente | Representa a las personas que solicitan atención médica. |
+| Médico | Representa a los profesionales que atienden las citas. |
 | Especialidad | Representa el área médica a la que pertenece cada médico. |
-| Cita | Registra la atención médica programada. | 
-| Receta | Representa las recetas generadas durante algunas citas. | 
-| Medicamento | Representa los medicamentos incluidos en las recetas. | 
-| Detalle de receta | Permite registrar los medicamentos y las indicaciones de cada tratamiento. | Dosis, duración. |
-
+| Cita | Registra la atención médica programada. |
+| Receta | Representa las recetas generadas durante algunas citas. |
+| Medicamento | Representa los medicamentos incluidos en las recetas. |
+| Detalle de receta | Registra los medicamentos y las indicaciones de cada tratamiento, como la dosis y la duración. |
 ## 3. Relaciones y cardinalidades
 
 | Relación | Descripción | Cardinalidad |
