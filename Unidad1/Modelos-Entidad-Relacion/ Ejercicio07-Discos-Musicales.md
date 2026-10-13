@@ -16,7 +16,7 @@
 
 ## 🗺️ 2. Diagrama Entidad-Relación
 
-![Diagrama original de Discos Musicales](diagramas_originales/07_discos_musicales.png)
+<img width="622" height="180" alt="Tienda" src="https://github.com/user-attachments/assets/43ac74ed-603c-4a9c-bcb2-fe2008f98094" />
 
 
 
