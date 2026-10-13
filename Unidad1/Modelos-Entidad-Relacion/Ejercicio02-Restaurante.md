@@ -43,7 +43,8 @@ Las entidades identificadas en el sistema son las siguientes:
 ## 4. Diagrama Entidad-Relación
 
 El diagrama representa las entidades, sus relaciones y las cardinalidades correspondientes.
-<img width="805" height="401" alt="RESTAURANT1" src="https://github.com/user-attachments/assets/345ffa62-eb8d-4b50-847c-ee1413deef79" />
+<img width="805" height="401" alt="RESTAURANT1" src="https://github.com/user-attachments/assets/253f070d-4860-473e-a801-d430ec8617a9" />
+
 
 
 ## 5. Conclusión
