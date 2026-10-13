@@ -7,44 +7,15 @@
 ---
 
 ## 🔎 1. Análisis del problema
+Una empresa discográfica necesita modelar los datos sobre sus diferentes recursos según las siguientes características:
+Manager: de cada mánager se almacena un identificador de manager y su nombre. Un manager representa a una serie de artistas.
+Artista: un artista es representado por un manager. De los artistas se almacena su nombre completo (usando un único atributo) y su NIF.
+Evento de promoción: los artistas participan en eventos de promoción para dar a conocer sus trabajos. En un evento de promoción pueden participar varios artistas. De un evento se almacena un identificador único, la fecha de celebración y el número de asistentes.
 
-La empresa discográfica necesita organizar la información de sus mánagers, artistas y eventos de promoción.
 
-Los mánagers representan a artistas y los artistas participan en eventos para promocionar sus trabajos.
-
-## 🏷️ 2. Identificación de entidades y atributos
-
-| Entidad | Descripción |
-|---|---|
-| Manager | Representa a los mánagers de los artistas. |
-| Artista | Representa a los artistas de la empresa. |
-| Evento de promoción | Registra los eventos de promoción. |
-
-### 📋 Atributos identificados
-
-- **Manager:** identificador y nombre.
-- **Artista:** nombre completo y NIF.
-- **Evento de promoción:** identificador, fecha de celebración y número de asistentes.
-
-## 🔗 3. Relaciones y cardinalidades
-
-| Relación | Descripción | Cardinalidad según el diagrama |
-|---|---|---|
-| Manager - Artista | Los mánagers representan artistas. | 1:N |
-| Artista - Evento de promoción | Los artistas participan en eventos. | N:M |
-
-### 📝 Análisis de las relaciones
-
-- **Manager - Artista:** La relación `Representa` conecta al mánager con los artistas.
-- **Artista - Evento de promoción:** La relación `Participa` registra la participación de los artistas en los eventos.
-
-## 🗺️ 4. Diagrama Entidad-Relación
+## 🗺️ 2. Diagrama Entidad-Relación
 
 <img width="597" height="164" alt="Manager" src="https://github.com/user-attachments/assets/8781cabf-8be7-40d9-9d07-f3daa3f30331" />
-
-## ✅ 5. Conclusión
-
-El modelo permite organizar los artistas, sus mánagers y los eventos de promoción en los que participan.
 
 ---
 
