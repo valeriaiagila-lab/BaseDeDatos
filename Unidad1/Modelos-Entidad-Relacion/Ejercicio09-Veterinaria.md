@@ -57,7 +57,8 @@ Las mascotas pertenecen a propietarios y pasan consulta con veterinarios. Durant
 
 En el diagrama, el triángulo de herencia representa la generalización o especialización entre `Personal` y sus subtipos:
 
-<img width="622" height="386" alt="veterinaria" src="https://github.com/user-attachments/assets/afae7ba3-2f51-4dc5-aa6e-1ab8e8b3395c" />
+<img width="820" height="521" alt="VETERINARIA1" src="https://github.com/user-attachments/assets/1c939069-a2eb-4d64-9296-5c95c702b65f" />
+
 
 - **Personal:** entidad general o supertipo.
 - **Veterinario:** subtipo que hereda los atributos de Personal y tiene los atributos específicos `fecha de alta` y `especialidad`.
