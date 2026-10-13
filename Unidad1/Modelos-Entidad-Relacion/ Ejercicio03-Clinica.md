@@ -13,7 +13,7 @@ Los pacientes solicitan citas; cada cita la atiende un médico a un paciente en 
 
 El diagrama representa las entidades principales de la clínica, sus relaciones y las cardinalidades correspondientes.
 
-<img width="892" height="466" alt="CITAS" src="https://github.com/user-attachments/assets/5ea067ef-5f38-44f9-90a6-882cfa7daa89" />
+<img width="892" height="466" alt="CITAS" src="https://github.com/user-attachments/assets/608e7948-73e0-4cef-b926-c72c5450abdc" />
 
 
 
