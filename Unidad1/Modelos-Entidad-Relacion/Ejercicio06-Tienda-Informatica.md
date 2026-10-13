@@ -6,47 +6,13 @@
 
 ---
 
-## 🔎 1. Análisis del problema
+## 🔎 1. Enunciado
 
-La tienda informática necesita administrar sus clientes, productos y proveedores.
+Se desea crear una aplicación para la gestión de una tienda informática. La tienda dispone de una serie de productos que se venden a los clientes. De cada producto informático se desea guardar el código, descripción, precio y número de existencias. De cada cliente se desea guardar el código, nombre, apellidos, dirección y número telefónico. Un cliente puede comprar varios productos en la tienda y un mismo producto puede ser comprado por varios clientes. Cada vez que se compre un artículo quedará registrada la compra en la base de datos junto con la fecha en la que se compró el artículo. La tienda tiene contactos con varios proveedores que son los que suministran los productos. Un mismo producto puede ser suministrado por varios proveedores. De cada proveedor se desea guardar el código, nombres, apellidos, dirección, provincia y número de teléfono.
 
-Los clientes compran productos y cada compra registra su fecha. Los proveedores suministran los productos que comercializa la tienda.
-
-## 🏷️ 2. Identificación de entidades y atributos
-
-| Entidad | Descripción |
-|---|---|
-| Cliente | Registra la información de los clientes. |
-| Producto | Registra los productos informáticos disponibles. |
-| Proveedor | Registra la información de los proveedores. |
-| Compra | Registra las compras realizadas y su fecha. |
-
-### 📋 Atributos identificados
-
-- **Cliente:** código, nombre, apellidos, dirección y teléfono.
-- **Producto:** código, descripción, precio y existencias.
-- **Proveedor:** código, nombres, apellidos, dirección, provincia y teléfono.
-- **Compra:** fecha.
-
-## 🔗 3. Relaciones y cardinalidades
-
-| Relación | Descripción | Cardinalidad según el diagrama |
-|---|---|---|
-| Cliente - Producto | Registra las compras de productos. | N:M |
-| Proveedor - Producto | Registra los productos suministrados. | N:M |
-
-### 📝 Análisis de las relaciones
-
-- **Cliente - Producto:** La relación `Compra` conecta los clientes con los productos y registra la fecha.
-- **Proveedor - Producto:** La relación `Suministra` conecta los proveedores con los productos.
-
-## 🗺️ 4. Diagrama Entidad-Relación
+## 🗺️ 2. Diagrama Entidad-Relación
 
 <img width="622" height="180" alt="Tienda" src="https://github.com/user-attachments/assets/ea69d7c1-cbbd-4b73-9eae-2bc5b4a89aa5" />
-
-## ✅ 5. Conclusión
-
-El modelo permite administrar los clientes, productos y proveedores, además de registrar las compras y las relaciones entre los productos y sus proveedores.
 
 ---
 
