@@ -124,6 +124,7 @@ En este repositorio se podrán almacenar:
 - Gráficos y resultados de las actividades.
 - Documentación de los proyectos desarrollados.
 
+```text
 
 
 ## 👩‍💻 Autora
@@ -131,6 +132,9 @@ En este repositorio se podrán almacenar:
 **Valeria Agila Gómez**  
 Estudiante de la carrera de Computación  
 Universidad Nacional de Loja
+
+
+```
 
 ---
 
