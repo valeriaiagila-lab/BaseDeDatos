@@ -124,7 +124,7 @@ En este repositorio se podrán almacenar:
 - Gráficos y resultados de las actividades.
 - Documentación de los proyectos desarrollados.
 
-```
+
 
 ## 👩‍💻 Autora
 
