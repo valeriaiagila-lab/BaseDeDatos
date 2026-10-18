@@ -16,7 +16,7 @@
 
 ## 🗺️ 2. Diagrama Entidad-Relación
 
-<img width="622" height="180" alt="Tienda" src="https://github.com/user-attachments/assets/43ac74ed-603c-4a9c-bcb2-fe2008f98094" />
+<img width="999" height="411" alt="Tienda infromatica" src="https://github.com/user-attachments/assets/e67bb189-7fa3-4d08-a713-f63837c81f86" />
 
 
 
