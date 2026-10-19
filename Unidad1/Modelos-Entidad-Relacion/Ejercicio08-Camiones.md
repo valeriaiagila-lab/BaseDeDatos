@@ -12,7 +12,7 @@ De los camiones que llevan los camioneros, interesa conocer la matrícula, model
 
 ## 🗺️ 2. Diagrama Entidad-Relación
 
-<img width="583" height="372" alt="Camiones" src="https://github.com/user-attachments/assets/91c10515-327b-4d35-a0e7-1c76cc76c038" />
+<img width="912" height="536" alt="Camion1" src="https://github.com/user-attachments/assets/c84ab62c-ed18-45c0-872f-50acc6e97953" />
 
 ---
 
