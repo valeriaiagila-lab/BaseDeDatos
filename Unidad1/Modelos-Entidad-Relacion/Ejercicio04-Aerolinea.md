@@ -21,7 +21,7 @@ Una aerolínea opera vuelos (cada uno con número, fecha, origen y destino), cad
 
 
 ---
---
+
 ## 🖼️ 4. Codigo MySQL
 ```sql
 CREATE DATABASE ej4_aerolinea;
@@ -56,5 +56,6 @@ CREATE TABLE Reserva (
 );
 
 ```
+---
 
 [⬅️ Volver al índice de modelos](Modelos.md)
