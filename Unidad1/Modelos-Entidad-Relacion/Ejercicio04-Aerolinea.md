@@ -9,9 +9,16 @@
 
 Una aerolínea opera vuelos (cada uno con número, fecha, origen y destino), cada vuelo lo realiza un avión. Los pasajeros realizan reservas para un vuelo específico, indicando asiento y tarifa pagada en el momento de la reserva.
 
-## 4. Diagrama Entidad-Relación
+## 2. Diagrama Entidad-Relación
 
 <img width="752" height="304" alt="Aeorolínea" src="https://github.com/user-attachments/assets/567d32d3-c4ce-4954-8c2f-1329b4193ffb" />
+
+---
+
+## 3. Modelo Relacional
+
+<img width="539" height="425" alt="Modelo Aerolinia" src="https://github.com/user-attachments/assets/7fb856c8-c095-4b16-9759-c67305bad2f6" />
+
 
 ---
 
