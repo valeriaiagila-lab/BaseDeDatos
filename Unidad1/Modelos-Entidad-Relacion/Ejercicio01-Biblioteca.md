@@ -28,6 +28,48 @@ El siguiente diagrama representa las entidades principales y sus relaciones.
 ---
 
 
+## 🖼️ 4. Codigo MySQL
+```sql
+CREATE DATABASE ej1_biblioteca;
+USE ej1_biblioteca;
+
+CREATE TABLE Autor (
+    id_autor INT PRIMARY KEY,
+    nombre   VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE Libro (
+    id_libro INT PRIMARY KEY,
+    titulo   VARCHAR(150) NOT NULL
+);
+
+CREATE TABLE Escrito (
+    id_libro INT NOT NULL,
+    id_autor INT NOT NULL,
+    PRIMARY KEY (id_libro, id_autor),
+    FOREIGN KEY (id_libro) REFERENCES Libro (id_libro),
+    FOREIGN KEY (id_autor) REFERENCES Autor (id_autor)
+);
+
+CREATE TABLE Socio (
+    id_socio INT PRIMARY KEY,
+    nombre   VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE Prestamo (
+    id_libro         INT  NOT NULL,
+    id_socio         INT  NOT NULL,
+    fecha_retiro     DATE NOT NULL,
+    fecha_devolucion DATE,
+    PRIMARY KEY (id_libro, id_socio),
+    FOREIGN KEY (id_libro) REFERENCES Libro (id_libro),
+    FOREIGN KEY (id_socio) REFERENCES Socio (id_socio)
+);
+```
+
+---
+
+
 [⬅️ Volver al índice de modelos](Modelos.md)
 
 
