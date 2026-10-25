@@ -16,4 +16,11 @@ De los camiones que llevan los camioneros, interesa conocer la matrícula, model
 
 ---
 
+## 🗺️ 3. Modelo Relacional
+
+
+<img width="711" height="365" alt="Modelo Relacional Camiones" src="https://github.com/user-attachments/assets/4addf03e-ec64-42b7-919a-758f16277d7b" />
+
+---
+
 [⬅️ Volver al índice de modelos](Modelos.md)
