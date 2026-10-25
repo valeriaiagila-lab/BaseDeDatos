@@ -24,60 +24,59 @@ El diagrama representa las entidades principales de la clínica, sus relaciones 
 
 ---
 
----
 ## 🖼️ 4. Codigo MySQL
 ```sql
-CREATE DATABASE ej3_clinica;
-USE ej3_clinica;
 
-CREATE TABLE Especialidad (
-    id_especialidad INT PRIMARY KEY,
-    nombre          VARCHAR(80) NOT NULL
+Create Table Especialidad (
+    id_especialidad Int Primary Key,
+    nombre          Varchar(80) Not Null
+);
+ 
+Create Table Medico (
+    id_medico       Int Primary Key,
+    nombre          Varchar(100) Not Null,
+    id_especialidad Int Not Null,
+    Foreign Key (id_especialidad) References Especialidad (id_especialidad)
+);
+ 
+Create Table Paciente (
+    id_paciente Int Primary Key,
+    nombre      Varchar(100) Not Null
+);
+ 
+Create Table Cita (
+    id_cita     Int Primary Key,
+    fecha       Date Not Null,
+    hora        Time Not Null,
+    consultorio Varchar(20) Not Null,
+    id_paciente Int Not Null,
+    id_medico   Int Not Null,
+    Foreign Key (id_paciente) References Paciente (id_paciente),
+    Foreign Key (id_medico)   References Medico (id_medico)
+);
+ 
+Create Table Receta (
+    id_receta Int Primary Key,
+    dosis     Varchar(100) Not Null,
+    duracion  Varchar(50)  Not Null,
+    id_cita   Int Not Null Unique,
+    Foreign Key (id_cita) References Cita (id_cita)
+);
+ 
+Create Table Medicamento (
+    id_medicamento Int Primary Key,
+    nombre         Varchar(100) Not Null
+);
+ 
+Create Table Incluye (
+    id_receta      Int Not Null,
+    id_medicamento Int Not Null,
+    Primary Key (id_receta, id_medicamento),
+    Foreign Key (id_receta)      References Receta (id_receta),
+    Foreign Key (id_medicamento) References Medicamento (id_medicamento)
 );
 
-CREATE TABLE Medico (
-    id_medico       INT PRIMARY KEY,
-    nombre          VARCHAR(100) NOT NULL,
-    id_especialidad INT NOT NULL,
-    FOREIGN KEY (id_especialidad) REFERENCES Especialidad (id_especialidad)
-);
 
-CREATE TABLE Paciente (
-    id_paciente INT PRIMARY KEY,
-    nombre      VARCHAR(100) NOT NULL
-);
-
-CREATE TABLE Cita (
-    id_cita     INT PRIMARY KEY,
-    fecha       DATE NOT NULL,
-    hora        TIME NOT NULL,
-    consultorio VARCHAR(20) NOT NULL,
-    id_paciente INT NOT NULL,
-    id_medico   INT NOT NULL,
-    FOREIGN KEY (id_paciente) REFERENCES Paciente (id_paciente),
-    FOREIGN KEY (id_medico)   REFERENCES Medico (id_medico)
-);
-
-CREATE TABLE Receta (
-    id_receta INT PRIMARY KEY,
-    dosis     VARCHAR(100) NOT NULL,
-    duracion  VARCHAR(50)  NOT NULL,
-    id_cita   INT NOT NULL UNIQUE,
-    FOREIGN KEY (id_cita) REFERENCES Cita (id_cita)
-);
-
-CREATE TABLE Medicamento (
-    id_medicamento INT PRIMARY KEY,
-    nombre         VARCHAR(100) NOT NULL
-);
-
-CREATE TABLE Incluye (
-    id_receta      INT NOT NULL,
-    id_medicamento INT NOT NULL,
-    PRIMARY KEY (id_receta, id_medicamento),
-    FOREIGN KEY (id_receta)      REFERENCES Receta (id_receta),
-    FOREIGN KEY (id_medicamento) REFERENCES Medicamento (id_medicamento)
-);
 
 ```
 
