@@ -32,34 +32,34 @@ Una empresa discográfica necesita modelar los datos sobre sus diferentes recurs
 
 ## 🖼️ 4. Codigo MySQL
 ```sql
-CREATE DATABASE ej5_discografica;
-USE ej5_discografica;
 
-CREATE TABLE Manager (
-    identificador INT PRIMARY KEY,
-    nombre        VARCHAR(100) NOT NULL
+Create Table Manager (
+    identificador Int Primary Key,
+    nombre        Varchar(100) Not Null
 );
+ 
+Create Table Artista (
+    NIF        Varchar(9) Primary Key,
+    nombre     Varchar(120) Not Null,
+    id_manager Int Not Null,
+    Foreign Key (id_manager) References Manager (identificador)
+);
+ 
+Create Table Evento_promocion (
+    identificador     Int Primary Key,
+    fecha_celebracion Date Not Null,
+    numero_asistentes Int  Not Null
+);
+ 
+Create Table Participa (
+    NIF       Varchar(9) Not Null,
+    id_evento Int Not Null,
+    Primary Key (NIF, id_evento),
+    Foreign Key (NIF)       References Artista (NIF),
+    Foreign Key (id_evento) References Evento_promocion (identificador)
+);
+ 
 
-CREATE TABLE Artista (
-    NIF        VARCHAR(9) PRIMARY KEY,
-    nombre     VARCHAR(120) NOT NULL,
-    id_manager INT NOT NULL,
-    FOREIGN KEY (id_manager) REFERENCES Manager (identificador)
-);
-
-CREATE TABLE Evento_promocion (
-    identificador     INT PRIMARY KEY,
-    fecha_celebracion DATE NOT NULL,
-    numero_asistentes INT  NOT NULL
-);
-
-CREATE TABLE Participa (
-    NIF       VARCHAR(9) NOT NULL,
-    id_evento INT NOT NULL,
-    PRIMARY KEY (NIF, id_evento),
-    FOREIGN KEY (NIF)       REFERENCES Artista (NIF),
-    FOREIGN KEY (id_evento) REFERENCES Evento_promocion (identificador)
-);
 
 ```
 
