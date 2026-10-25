@@ -23,4 +23,56 @@ De los camiones que llevan los camioneros, interesa conocer la matrícula, model
 
 ---
 
+
+## 🖼️ 4. Codigo MySQL
+```sql
+
+CREATE DATABASE ej8_camiones;
+USE ej8_camiones;
+
+CREATE TABLE Provincia (
+    codigo VARCHAR(5) PRIMARY KEY,
+    nombre VARCHAR(60) NOT NULL
+);
+
+CREATE TABLE Camionero (
+    cedula    VARCHAR(10) PRIMARY KEY,
+    nombre    VARCHAR(100) NOT NULL,
+    telefono  VARCHAR(15),
+    direccion VARCHAR(150),
+    salario   DECIMAL(8,2) NOT NULL,
+    poblacion VARCHAR(60)
+);
+
+CREATE TABLE Paquete (
+    codigo                 VARCHAR(15) PRIMARY KEY,
+    descripcion            VARCHAR(200),
+    destinatario           VARCHAR(100) NOT NULL,
+    direccion_destinatario VARCHAR(150) NOT NULL,
+    codigo_provincia       VARCHAR(5)   NOT NULL,
+    cedula_camionero       VARCHAR(10)  NOT NULL,
+    FOREIGN KEY (codigo_provincia) REFERENCES Provincia (codigo),
+    FOREIGN KEY (cedula_camionero) REFERENCES Camionero (cedula)
+);
+
+CREATE TABLE Camion (
+    matricula VARCHAR(10) PRIMARY KEY,
+    modelo    VARCHAR(50),
+    tipo      VARCHAR(40),
+    potencia  INT
+);
+
+CREATE TABLE Conduce (
+    cedula    VARCHAR(10) NOT NULL,
+    matricula VARCHAR(10) NOT NULL,
+    fecha     DATE NOT NULL,
+    PRIMARY KEY (cedula, matricula),
+    FOREIGN KEY (cedula)    REFERENCES Camionero (cedula),
+    FOREIGN KEY (matricula) REFERENCES Camion (matricula)
+);
+```
+
+---
+
+
 [⬅️ Volver al índice de modelos](Modelos.md)
