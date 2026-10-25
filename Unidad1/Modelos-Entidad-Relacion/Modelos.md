@@ -304,8 +304,7 @@ enunciados proporcionados en clase.
 7. [💿 Discos Musicales](Ejercicio07-Discos-Musicales.md)
 8. [🚚 Camiones](Ejercicio08-Camiones.md)
 9. [🐾 Veterinaria](Ejercicio09-Veterinaria.md)
-10. [🏢 Empresa: Empleados y Proyectos](Ejercicio10-Empresa.md)
-11. [🎓 Universidad: Prerrequisitos entre Cursos](Ejercicio11-Universidad.md)
+
 
 ---
 
