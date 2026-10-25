@@ -24,35 +24,33 @@ Una aerolínea opera vuelos (cada uno con número, fecha, origen y destino), cad
 
 ## 🖼️ 4. Codigo MySQL
 ```sql
-CREATE DATABASE ej4_aerolinea;
-USE ej4_aerolinea;
 
-CREATE TABLE Avion (
-    id_avion INT PRIMARY KEY
+Create Table Avion (
+    id_avion Int Primary Key
 );
-
-CREATE TABLE Vuelo (
-    numero   VARCHAR(10) PRIMARY KEY,
-    fecha    DATE NOT NULL,
-    origen   VARCHAR(60) NOT NULL,
-    destino  VARCHAR(60) NOT NULL,
-    id_avion INT NOT NULL,
-    FOREIGN KEY (id_avion) REFERENCES Avion (id_avion)
+ 
+Create Table Vuelo (
+    numero   Varchar(10) Primary Key,
+    fecha    Date Not Null,
+    origen   Varchar(60) Not Null,
+    destino  Varchar(60) Not Null,
+    id_avion Int Not Null,
+    Foreign Key (id_avion) References Avion (id_avion)
 );
-
-CREATE TABLE Pasajero (
-    id_pasajero INT PRIMARY KEY,
-    nombre      VARCHAR(100) NOT NULL
+ 
+Create Table Pasajero (
+    id_pasajero Int Primary Key,
+    nombre      Varchar(100) Not Null
 );
-
-CREATE TABLE Reserva (
-    id_pasajero INT NOT NULL,
-    numero      VARCHAR(10) NOT NULL,
-    asiento     VARCHAR(5)  NOT NULL,
-    tarifa      DECIMAL(8,2) NOT NULL,
-    PRIMARY KEY (id_pasajero, numero),
-    FOREIGN KEY (id_pasajero) REFERENCES Pasajero (id_pasajero),
-    FOREIGN KEY (numero)      REFERENCES Vuelo (numero)
+ 
+Create Table Reserva (
+    id_pasajero Int Not Null,
+    numero      Varchar(10) Not Null,
+    asiento     Varchar(5)  Not Null,
+    tarifa      Decimal(8,2) Not Null,
+    Primary Key (id_pasajero, numero),
+    Foreign Key (id_pasajero) References Pasajero (id_pasajero),
+    Foreign Key (numero)      References Vuelo (numero)
 );
 
 ```
