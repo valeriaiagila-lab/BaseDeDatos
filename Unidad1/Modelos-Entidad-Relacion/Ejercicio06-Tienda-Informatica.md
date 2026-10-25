@@ -16,4 +16,11 @@ Se desea crear una aplicación para la gestión de una tienda informática. La t
 
 ---
 
+## 🗺️ 3. Modelo Relacional
+
+<img width="577" height="415" alt="Modelo Relacional Tienda" src="https://github.com/user-attachments/assets/d974c959-fc10-40c5-95d5-6899e52e3ffe" />
+
+---
+
+
 [⬅️ Volver al índice de modelos](Modelos.md)
