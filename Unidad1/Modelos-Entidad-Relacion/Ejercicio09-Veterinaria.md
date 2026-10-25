@@ -37,4 +37,12 @@
 
 ---
 
+
+## 🗺️ 3. Modelo Relacional
+<img width="471" height="507" alt="Modelo Relacional Veterinaria " src="https://github.com/user-attachments/assets/58a47b74-df0e-4180-953e-a9403c2ec63b" />
+
+
+
+---
+
 [⬅️ Volver al índice de modelos](Modelos.md)
