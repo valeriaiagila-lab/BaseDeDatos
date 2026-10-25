@@ -27,49 +27,50 @@ De los camiones que llevan los camioneros, interesa conocer la matrícula, model
 ## 🖼️ 4. Codigo MySQL
 ```sql
 
-CREATE DATABASE ej8_camiones;
-USE ej8_camiones;
-
-CREATE TABLE Provincia (
-    codigo VARCHAR(5) PRIMARY KEY,
-    nombre VARCHAR(60) NOT NULL
+Create Table Provincia (
+    codigo Varchar(5) Primary Key,
+    nombre Varchar(60) Not Null
 );
-
-CREATE TABLE Camionero (
-    cedula    VARCHAR(10) PRIMARY KEY,
-    nombre    VARCHAR(100) NOT NULL,
-    telefono  VARCHAR(15),
-    direccion VARCHAR(150),
-    salario   DECIMAL(8,2) NOT NULL,
-    poblacion VARCHAR(60)
+ 
+Create Table Camionero (
+    cedula    Varchar(10) Primary Key,
+    nombre    Varchar(100) Not Null,
+    telefono  Varchar(15),
+    direccion Varchar(150),
+    salario   Decimal(8,2) Not Null,
+    poblacion Varchar(60)
 );
-
-CREATE TABLE Paquete (
-    codigo                 VARCHAR(15) PRIMARY KEY,
-    descripcion            VARCHAR(200),
-    destinatario           VARCHAR(100) NOT NULL,
-    direccion_destinatario VARCHAR(150) NOT NULL,
-    codigo_provincia       VARCHAR(5)   NOT NULL,
-    cedula_camionero       VARCHAR(10)  NOT NULL,
-    FOREIGN KEY (codigo_provincia) REFERENCES Provincia (codigo),
-    FOREIGN KEY (cedula_camionero) REFERENCES Camionero (cedula)
+ 
+Create Table Paquete (
+    codigo                 Varchar(15) Primary Key,
+    descripcion            Varchar(200),
+    destinatario           Varchar(100) Not Null,
+    direccion_destinatario Varchar(150) Not Null,
+    codigo_provincia       Varchar(5)   Not Null,
+    cedula_camionero       Varchar(10)  Not Null,
+    Foreign Key (codigo_provincia) References Provincia (codigo),
+    Foreign Key (cedula_camionero) References Camionero (cedula)
 );
-
-CREATE TABLE Camion (
-    matricula VARCHAR(10) PRIMARY KEY,
-    modelo    VARCHAR(50),
-    tipo      VARCHAR(40),
-    potencia  INT
+ 
+Create Table Camion (
+    matricula Varchar(10) Primary Key,
+    modelo    Varchar(50),
+    tipo      Varchar(40),
+    potencia  Int
 );
-
-CREATE TABLE Conduce (
-    cedula    VARCHAR(10) NOT NULL,
-    matricula VARCHAR(10) NOT NULL,
-    fecha     DATE NOT NULL,
-    PRIMARY KEY (cedula, matricula),
-    FOREIGN KEY (cedula)    REFERENCES Camionero (cedula),
-    FOREIGN KEY (matricula) REFERENCES Camion (matricula)
+ 
+Create Table Conduce (
+    cedula    Varchar(10) Not Null,
+    matricula Varchar(10) Not Null,
+    fecha     Date Not Null,
+    Primary Key (cedula, matricula),
+    Foreign Key (cedula)    References Camionero (cedula),
+    Foreign Key (matricula) References Camion (matricula)
 );
+ 
+
+
+
 ```
 
 ---
