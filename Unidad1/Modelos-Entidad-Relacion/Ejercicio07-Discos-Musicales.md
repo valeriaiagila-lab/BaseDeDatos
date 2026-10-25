@@ -28,41 +28,39 @@
 
 ## 🖼️ 4. Codigo MySQL
 ```sql
-CREATE DATABASE ej7_discos_musicales;
-USE ej7_discos_musicales;
 
-CREATE TABLE Genero (
-    id_genero VARCHAR(40) PRIMARY KEY
+Create Table Genero (
+    id_genero Varchar(40) Primary Key
 );
-
-CREATE TABLE Cantante (
-    id_cantante INT PRIMARY KEY,
-    nombre      VARCHAR(100) NOT NULL,
-    pais        VARCHAR(60)  NOT NULL
+ 
+Create Table Cantante (
+    id_cantante Int Primary Key,
+    nombre      Varchar(100) Not Null,
+    pais        Varchar(60)  Not Null
 );
-
-CREATE TABLE Disco (
-    id_disco    INT PRIMARY KEY,
-    titulo      VARCHAR(150) NOT NULL,
-    precio      DECIMAL(8,2) NOT NULL,
-    id_genero   VARCHAR(40)  NOT NULL,
-    id_cantante INT NOT NULL,
-    FOREIGN KEY (id_genero)   REFERENCES Genero (id_genero),
-    FOREIGN KEY (id_cantante) REFERENCES Cantante (id_cantante)
+ 
+Create Table Disco (
+    id_disco    Int Primary Key,
+    titulo      Varchar(150) Not Null,
+    precio      Decimal(8,2) Not Null,
+    id_genero   Varchar(40)  Not Null,
+    id_cantante Int Not Null,
+    Foreign Key (id_genero)   References Genero (id_genero),
+    Foreign Key (id_cantante) References Cantante (id_cantante)
 );
-
-CREATE TABLE Cancion (
-    id_cancion INT PRIMARY KEY,
-    titulo     VARCHAR(150) NOT NULL
+ 
+Create Table Cancion (
+    id_cancion Int Primary Key,
+    titulo     Varchar(150) Not Null
 );
-
-CREATE TABLE Contiene (
-    id_disco   INT NOT NULL,
-    id_cancion INT NOT NULL,
-    posicion   INT NOT NULL,
-    PRIMARY KEY (id_disco, id_cancion),
-    FOREIGN KEY (id_disco)   REFERENCES Disco (id_disco),
-    FOREIGN KEY (id_cancion) REFERENCES Cancion (id_cancion)
+ 
+Create Table Contiene (
+    id_disco   Int Not Null,
+    id_cancion Int Not Null,
+    posicion   Int Not Null,
+    Primary Key (id_disco, id_cancion),
+    Foreign Key (id_disco)   References Disco (id_disco),
+    Foreign Key (id_cancion) References Cancion (id_cancion)
 );
 
 ```
