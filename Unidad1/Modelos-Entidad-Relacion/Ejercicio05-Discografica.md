@@ -28,6 +28,41 @@ Una empresa discográfica necesita modelar los datos sobre sus diferentes recurs
 <img width="727" height="441" alt="modelo Discografia" src="https://github.com/user-attachments/assets/f99ab980-036b-44fc-a759-f2530d7e2ff8" />
 
 
---
+---
+
+## 🖼️ 4. Codigo MySQL
+```sql
+CREATE DATABASE ej5_discografica;
+USE ej5_discografica;
+
+CREATE TABLE Manager (
+    identificador INT PRIMARY KEY,
+    nombre        VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE Artista (
+    NIF        VARCHAR(9) PRIMARY KEY,
+    nombre     VARCHAR(120) NOT NULL,
+    id_manager INT NOT NULL,
+    FOREIGN KEY (id_manager) REFERENCES Manager (identificador)
+);
+
+CREATE TABLE Evento_promocion (
+    identificador     INT PRIMARY KEY,
+    fecha_celebracion DATE NOT NULL,
+    numero_asistentes INT  NOT NULL
+);
+
+CREATE TABLE Participa (
+    NIF       VARCHAR(9) NOT NULL,
+    id_evento INT NOT NULL,
+    PRIMARY KEY (NIF, id_evento),
+    FOREIGN KEY (NIF)       REFERENCES Artista (NIF),
+    FOREIGN KEY (id_evento) REFERENCES Evento_promocion (identificador)
+);
+
+```
+
+---
 
 [⬅️ Volver al índice de modelos](Modelos.md)
