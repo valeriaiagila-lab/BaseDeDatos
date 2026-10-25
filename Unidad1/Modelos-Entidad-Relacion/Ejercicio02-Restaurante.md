@@ -29,49 +29,48 @@ Además, la entidad `Detalle_Pedido` permite registrar la cantidad solicitada y 
 --
 ## 🖼️ 4. Codigo MySQL
 ```sql
-CREATE DATABASE ej2_restaurante;
-USE ej2_restaurante;
-
-CREATE TABLE Cliente (
-    id_cliente INT PRIMARY KEY,
-    nombre     VARCHAR(100) NOT NULL
+Create Table Cliente (
+    id_cliente Int Primary Key,
+    nombre     Varchar(100) Not Null
+);
+ 
+Create Table Mesero (
+    id_mesero Int Primary Key,
+    nombre    Varchar(100) Not Null
+);
+ 
+Create Table Pedido (
+    id_pedido  Int Primary Key,
+    id_cliente Int Not Null,
+    id_mesero  Int Not Null,
+    Foreign Key (id_cliente) References Cliente (id_cliente),
+    Foreign Key (id_mesero)  References Mesero (id_mesero)
+);
+ 
+Create Table Categoria (
+    id_categoria Int Primary Key,
+    nombre       Varchar(60) Not Null
+);
+ 
+Create Table Plato (
+    id_plato     Int Primary Key,
+    nombre       Varchar(100) Not Null,
+    precio       Decimal(8,2) Not Null,
+    id_categoria Int Not Null,
+    Foreign Key (id_categoria) References Categoria (id_categoria)
+);
+ 
+Create Table Detalle_pedido (
+    id_pedido       Int Not Null,
+    id_plato        Int Not Null,
+    cantidad        Int Not Null,
+    precio_unitario Decimal(8,2) Not Null,
+    Primary Key (id_pedido, id_plato),
+    Foreign Key (id_pedido) References Pedido (id_pedido),
+    Foreign Key (id_plato)  References Plato (id_plato)
 );
 
-CREATE TABLE Mesero (
-    id_mesero INT PRIMARY KEY,
-    nombre    VARCHAR(100) NOT NULL
-);
-
-CREATE TABLE Pedido (
-    id_pedido  INT PRIMARY KEY,
-    id_cliente INT NOT NULL,
-    id_mesero  INT NOT NULL,
-    FOREIGN KEY (id_cliente) REFERENCES Cliente (id_cliente),
-    FOREIGN KEY (id_mesero)  REFERENCES Mesero (id_mesero)
-);
-
-CREATE TABLE Categoria (
-    id_categoria INT PRIMARY KEY,
-    nombre       VARCHAR(60) NOT NULL
-);
-
-CREATE TABLE Plato (
-    id_plato     INT PRIMARY KEY,
-    nombre       VARCHAR(100) NOT NULL,
-    precio       DECIMAL(8,2) NOT NULL,
-    id_categoria INT NOT NULL,
-    FOREIGN KEY (id_categoria) REFERENCES Categoria (id_categoria)
-);
-
-CREATE TABLE Detalle_pedido (
-    id_pedido       INT NOT NULL,
-    id_plato        INT NOT NULL,
-    cantidad        INT NOT NULL,
-    precio_unitario DECIMAL(8,2) NOT NULL,
-    PRIMARY KEY (id_pedido, id_plato),
-    FOREIGN KEY (id_pedido) REFERENCES Pedido (id_pedido),
-    FOREIGN KEY (id_plato)  REFERENCES Plato (id_plato)
-);
+ 
 ```
 
 ---
