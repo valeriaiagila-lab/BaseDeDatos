@@ -18,6 +18,9 @@
 
 <img width="999" height="411" alt="Tienda infromatica" src="https://github.com/user-attachments/assets/e67bb189-7fa3-4d08-a713-f63837c81f86" />
 
+## 🗺️ 3. Modelo Relacional
+
+<img width="623" height="465" alt="Modelo Relacional Discos" src="https://github.com/user-attachments/assets/c9326492-8625-4d6b-9752-dccb84e99398" />
 
 
 ---
