@@ -30,8 +30,7 @@ El siguiente diagrama representa las entidades principales y sus relaciones.
 
 ## 🖼️ 4. Codigo MySQL
 ```sql
-Create Database ej1_biblioteca;
-Use ej1_biblioteca;
+
 
 Create Table Autor (
     id_autor Int Primary Key,
