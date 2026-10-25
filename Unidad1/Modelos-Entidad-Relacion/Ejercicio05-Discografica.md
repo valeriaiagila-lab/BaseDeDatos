@@ -18,8 +18,16 @@ Una empresa discográfica necesita modelar los datos sobre sus diferentes recurs
 
 ## 🗺️ 2. Diagrama Entidad-Relación
 
-<img width="597" height="164" alt="Manager" src="https://github.com/user-attachments/assets/8781cabf-8be7-40d9-9d07-f3daa3f30331" />
+<img width="807" height="260" alt="Discografia" src="https://github.com/user-attachments/assets/d75745b7-8776-4908-873b-fc48502a541d" />
+
 
 ---
+
+## 🗺️ 3. Modelo Relacional
+
+
+<img width="810" height="473" alt="Modelo Relacional discografia" src="https://github.com/user-attachments/assets/d2c1dca5-b4af-4aa5-8539-edcabef85822" />
+
+--
 
 [⬅️ Volver al índice de modelos](Modelos.md)
