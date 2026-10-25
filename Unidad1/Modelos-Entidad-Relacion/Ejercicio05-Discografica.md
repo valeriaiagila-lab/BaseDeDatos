@@ -25,8 +25,8 @@ Una empresa discográfica necesita modelar los datos sobre sus diferentes recurs
 
 ## 🗺️ 3. Modelo Relacional
 
+<img width="727" height="441" alt="modelo Discografia" src="https://github.com/user-attachments/assets/f99ab980-036b-44fc-a759-f2530d7e2ff8" />
 
-<img width="810" height="473" alt="Modelo Relacional discografia" src="https://github.com/user-attachments/assets/d2c1dca5-b4af-4aa5-8539-edcabef85822" />
 
 --
 
