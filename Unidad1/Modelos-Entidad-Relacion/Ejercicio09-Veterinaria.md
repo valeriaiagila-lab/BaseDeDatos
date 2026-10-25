@@ -46,69 +46,70 @@
 
 ## 🖼️ 4. Codigo MySQL
 ```sql
-CREATE DATABASE ej9_veterinaria;
-USE ej9_veterinaria;
 
-CREATE TABLE Propietario (
-    cedula    VARCHAR(10) PRIMARY KEY,
-    apellidos VARCHAR(80) NOT NULL,
-    nombres   VARCHAR(80) NOT NULL,
-    direccion VARCHAR(150)
-);
 
-CREATE TABLE Telefono_propietario (
-    cedula   VARCHAR(10) NOT NULL,
-    telefono VARCHAR(15) NOT NULL,
-    PRIMARY KEY (cedula, telefono),
-    FOREIGN KEY (cedula) REFERENCES Propietario (cedula)
+Create Table Propietario (
+    cedula    Varchar(10) Primary Key,
+    apellidos Varchar(80) Not Null,
+    nombres   Varchar(80) Not Null,
+    direccion Varchar(150)
 );
+ 
+Create Table Telefono_propietario (
+    cedula   Varchar(10) Not Null,
+    telefono Varchar(15) Not Null,
+    Primary Key (cedula, telefono),
+    Foreign Key (cedula) References Propietario (cedula)
+);
+ 
+Create Table Familiar_contacto (
+    cedula_propietario Varchar(10) Not Null,
+    cedula             Varchar(10) Not Null,
+    nombre             Varchar(100) Not Null,
+    telefono           Varchar(15),
+    Primary Key (cedula_propietario, cedula),
+    Foreign Key (cedula_propietario) References Propietario (cedula)
+);
+ 
+Create Table Mascota (
+    id_mascota         Int Primary Key,
+    nombre             Varchar(60) Not Null,
+    fecha_nacimiento   Date,
+    tipo               Varchar(40) Not Null,
+    cedula_propietario Varchar(10) Not Null,
+    Foreign Key (cedula_propietario) References Propietario (cedula)
+);
+ 
+Create Table Personal (
+    codigo Int Primary Key,
+    cedula Varchar(10) Not Null Unique,
+    nombre Varchar(100) Not Null
+);
+ 
+Create Table Veterinario (
+    codigo       Int Primary Key,
+    fecha_alta   Date Not Null,
+    especialidad Varchar(80),
+    Foreign Key (codigo) References Personal (codigo)
+);
+ 
+Create Table Auxiliar (
+    codigo          Int Primary Key,
+    base_cotizacion Decimal(8,2) Not Null,
+    Foreign Key (codigo) References Personal (codigo)
+);
+ 
+Create Table Consulta (
+    id_mascota         Int Not Null,
+    codigo_veterinario Int Not Null,
+    fecha              Date Not Null,
+    diagnostico        Varchar(255),
+    Primary Key (id_mascota, codigo_veterinario),
+    Foreign Key (id_mascota)         References Mascota (id_mascota),
+    Foreign Key (codigo_veterinario) References Veterinario (codigo)
+);
+ 
 
-CREATE TABLE Familiar_contacto (
-    cedula_propietario VARCHAR(10) NOT NULL,
-    cedula             VARCHAR(10) NOT NULL,
-    nombre             VARCHAR(100) NOT NULL,
-    telefono           VARCHAR(15),
-    PRIMARY KEY (cedula_propietario, cedula),
-    FOREIGN KEY (cedula_propietario) REFERENCES Propietario (cedula)
-);
-
-CREATE TABLE Mascota (
-    id_mascota         INT PRIMARY KEY,
-    nombre             VARCHAR(60) NOT NULL,
-    fecha_nacimiento   DATE,
-    tipo               VARCHAR(40) NOT NULL,
-    cedula_propietario VARCHAR(10) NOT NULL,
-    FOREIGN KEY (cedula_propietario) REFERENCES Propietario (cedula)
-);
-
-CREATE TABLE Personal (
-    codigo INT PRIMARY KEY,
-    cedula VARCHAR(10) NOT NULL UNIQUE,
-    nombre VARCHAR(100) NOT NULL
-);
-
-CREATE TABLE Veterinario (
-    codigo       INT PRIMARY KEY,
-    fecha_alta   DATE NOT NULL,
-    especialidad VARCHAR(80),
-    FOREIGN KEY (codigo) REFERENCES Personal (codigo)
-);
-
-CREATE TABLE Auxiliar (
-    codigo          INT PRIMARY KEY,
-    base_cotizacion DECIMAL(8,2) NOT NULL,
-    FOREIGN KEY (codigo) REFERENCES Personal (codigo)
-);
-
-CREATE TABLE Consulta (
-    id_mascota         INT NOT NULL,
-    codigo_veterinario INT NOT NULL,
-    fecha              DATE NOT NULL,
-    diagnostico        VARCHAR(255),
-    PRIMARY KEY (id_mascota, codigo_veterinario),
-    FOREIGN KEY (id_mascota)         REFERENCES Mascota (id_mascota),
-    FOREIGN KEY (codigo_veterinario) REFERENCES Veterinario (codigo)
-);
 
 ```
 
