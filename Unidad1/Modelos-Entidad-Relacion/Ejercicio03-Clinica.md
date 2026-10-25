@@ -22,7 +22,7 @@ El diagrama representa las entidades principales de la clínica, sus relaciones 
 <img width="443" height="484" alt="Modelo Relacional Clinica" src="https://github.com/user-attachments/assets/4cb978cc-98c9-405a-87dc-25d105acd24d" />
 
 
---
+---
 
 
 [⬅️ Volver al índice de modelos](Modelos.md)
