@@ -26,7 +26,8 @@ Además, la entidad `Detalle_Pedido` permite registrar la cantidad solicitada y 
 
 
 
---
+---
+
 ## 🖼️ 4. Codigo MySQL
 ```sql
 Create Table Cliente (
