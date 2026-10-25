@@ -25,49 +25,47 @@ Se desea crear una aplicación para la gestión de una tienda informática. La t
 ## 🖼️ 4. Codigo MySQL
 ```sql
 
-CREATE DATABASE ej6_tienda_informatica;
-USE ej6_tienda_informatica;
-
-CREATE TABLE Cliente (
-    codigo    INT PRIMARY KEY,
-    nombre    VARCHAR(60) NOT NULL,
-    apellidos VARCHAR(80) NOT NULL,
-    direccion VARCHAR(150),
-    telefono  VARCHAR(15)
+Create Table Cliente (
+    codigo    Int Primary Key,
+    nombre    Varchar(60) Not Null,
+    apellidos Varchar(80) Not Null,
+    direccion Varchar(150),
+    telefono  Varchar(15)
+);
+ 
+Create Table Producto (
+    codigo      Int Primary Key,
+    descripcion Varchar(200) Not Null,
+    precio      Decimal(10,2) Not Null,
+    existencias Int Not Null
+);
+ 
+Create Table Compra (
+    id_compra       Int Primary Key,
+    codigo_cliente  Int  Not Null,
+    codigo_producto Int  Not Null,
+    fecha           Date Not Null,
+    Foreign Key (codigo_cliente)  References Cliente (codigo),
+    Foreign Key (codigo_producto) References Producto (codigo)
+);
+ 
+Create Table Proveedor (
+    codigo    Int Primary Key,
+    nombres   Varchar(60) Not Null,
+    apellidos Varchar(80) Not Null,
+    direccion Varchar(150),
+    provincia Varchar(60),
+    telefono  Varchar(15)
+);
+ 
+Create Table Suministra (
+    codigo_producto  Int Not Null,
+    codigo_proveedor Int Not Null,
+    Primary Key (codigo_producto, codigo_proveedor),
+    Foreign Key (codigo_producto)  References Producto (codigo),
+    Foreign Key (codigo_proveedor) References Proveedor (codigo)
 );
 
-CREATE TABLE Producto (
-    codigo      INT PRIMARY KEY,
-    descripcion VARCHAR(200) NOT NULL,
-    precio      DECIMAL(10,2) NOT NULL,
-    existencias INT NOT NULL
-);
-
-CREATE TABLE Compra (
-    id_compra       INT PRIMARY KEY,
-    codigo_cliente  INT  NOT NULL,
-    codigo_producto INT  NOT NULL,
-    fecha           DATE NOT NULL,
-    FOREIGN KEY (codigo_cliente)  REFERENCES Cliente (codigo),
-    FOREIGN KEY (codigo_producto) REFERENCES Producto (codigo)
-);
-
-CREATE TABLE Proveedor (
-    codigo    INT PRIMARY KEY,
-    nombres   VARCHAR(60) NOT NULL,
-    apellidos VARCHAR(80) NOT NULL,
-    direccion VARCHAR(150),
-    provincia VARCHAR(60),
-    telefono  VARCHAR(15)
-);
-
-CREATE TABLE Suministra (
-    codigo_producto  INT NOT NULL,
-    codigo_proveedor INT NOT NULL,
-    PRIMARY KEY (codigo_producto, codigo_proveedor),
-    FOREIGN KEY (codigo_producto)  REFERENCES Producto (codigo),
-    FOREIGN KEY (codigo_proveedor) REFERENCES Proveedor (codigo)
-);
 
 ```
 
