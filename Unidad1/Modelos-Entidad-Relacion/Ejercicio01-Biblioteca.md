@@ -30,41 +30,42 @@ El siguiente diagrama representa las entidades principales y sus relaciones.
 
 ## 🖼️ 4. Codigo MySQL
 ```sql
-CREATE DATABASE ej1_biblioteca;
-USE ej1_biblioteca;
+Create Database ej1_biblioteca;
+Use ej1_biblioteca;
 
-CREATE TABLE Autor (
-    id_autor INT PRIMARY KEY,
-    nombre   VARCHAR(100) NOT NULL
+Create Table Autor (
+    id_autor Int Primary Key,
+    nombre   Varchar(100) Not Null
 );
 
-CREATE TABLE Libro (
-    id_libro INT PRIMARY KEY,
-    titulo   VARCHAR(150) NOT NULL
+Create Table Libro (
+    id_libro Int Primary Key,
+    titulo   Varchar(150) Not Null
 );
 
-CREATE TABLE Escrito (
-    id_libro INT NOT NULL,
-    id_autor INT NOT NULL,
-    PRIMARY KEY (id_libro, id_autor),
-    FOREIGN KEY (id_libro) REFERENCES Libro (id_libro),
-    FOREIGN KEY (id_autor) REFERENCES Autor (id_autor)
+Create Table Escrito (
+    id_libro Int Not Null,
+    id_autor Int Not Null,
+    Primary Key (id_libro, id_autor),
+    Foreign Key (id_libro) References Libro (id_libro),
+    Foreign Key (id_autor) References Autor (id_autor)
 );
 
-CREATE TABLE Socio (
-    id_socio INT PRIMARY KEY,
-    nombre   VARCHAR(100) NOT NULL
+Create Table Socio (
+    id_socio Int Primary Key,
+    nombre   Varchar(100) Not Null
 );
 
-CREATE TABLE Prestamo (
-    id_libro         INT  NOT NULL,
-    id_socio         INT  NOT NULL,
-    fecha_retiro     DATE NOT NULL,
-    fecha_devolucion DATE,
-    PRIMARY KEY (id_libro, id_socio),
-    FOREIGN KEY (id_libro) REFERENCES Libro (id_libro),
-    FOREIGN KEY (id_socio) REFERENCES Socio (id_socio)
+Create Table Prestamo (
+    id_libro         Int  Not Null,
+    id_socio         Int  Not Null,
+    fecha_retiro     Date Not Null,
+    fecha_devolucion Date,
+    Primary Key (id_libro, id_socio),
+    Foreign Key (id_libro) References Libro (id_libro),
+    Foreign Key (id_socio) References Socio (id_socio)
 );
+
 ```
 
 ---
