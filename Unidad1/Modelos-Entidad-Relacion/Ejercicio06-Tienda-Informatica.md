@@ -22,5 +22,56 @@ Se desea crear una aplicación para la gestión de una tienda informática. La t
 
 ---
 
+## 🖼️ 4. Codigo MySQL
+```sql
+
+CREATE DATABASE ej6_tienda_informatica;
+USE ej6_tienda_informatica;
+
+CREATE TABLE Cliente (
+    codigo    INT PRIMARY KEY,
+    nombre    VARCHAR(60) NOT NULL,
+    apellidos VARCHAR(80) NOT NULL,
+    direccion VARCHAR(150),
+    telefono  VARCHAR(15)
+);
+
+CREATE TABLE Producto (
+    codigo      INT PRIMARY KEY,
+    descripcion VARCHAR(200) NOT NULL,
+    precio      DECIMAL(10,2) NOT NULL,
+    existencias INT NOT NULL
+);
+
+CREATE TABLE Compra (
+    id_compra       INT PRIMARY KEY,
+    codigo_cliente  INT  NOT NULL,
+    codigo_producto INT  NOT NULL,
+    fecha           DATE NOT NULL,
+    FOREIGN KEY (codigo_cliente)  REFERENCES Cliente (codigo),
+    FOREIGN KEY (codigo_producto) REFERENCES Producto (codigo)
+);
+
+CREATE TABLE Proveedor (
+    codigo    INT PRIMARY KEY,
+    nombres   VARCHAR(60) NOT NULL,
+    apellidos VARCHAR(80) NOT NULL,
+    direccion VARCHAR(150),
+    provincia VARCHAR(60),
+    telefono  VARCHAR(15)
+);
+
+CREATE TABLE Suministra (
+    codigo_producto  INT NOT NULL,
+    codigo_proveedor INT NOT NULL,
+    PRIMARY KEY (codigo_producto, codigo_proveedor),
+    FOREIGN KEY (codigo_producto)  REFERENCES Producto (codigo),
+    FOREIGN KEY (codigo_proveedor) REFERENCES Proveedor (codigo)
+);
+
+```
+
+---
+
 
 [⬅️ Volver al índice de modelos](Modelos.md)
