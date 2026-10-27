@@ -64,5 +64,11 @@ Create Table Participa (
 ```
 
 ---
+## 🖼️ 5. Base de datos creada
+----
+
+<img width="254" height="171" alt="ejer5" src="https://github.com/user-attachments/assets/ca6933b8-d4d2-4c0a-bd4f-353da506d693" />
+
+---
 
 [⬅️ Volver al índice de modelos](Modelos.md)
