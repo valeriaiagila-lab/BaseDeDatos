@@ -56,4 +56,10 @@ Create Table Reserva (
 ```
 ---
 
+## 🖼️ 5. Base de datos creada
+
+<img width="351" height="278" alt="ejer4" src="https://github.com/user-attachments/assets/d0926b12-d2e7-4a9d-bef9-2ccb393f0e2b" />
+
+--
+
 [⬅️ Volver al índice de modelos](Modelos.md)
