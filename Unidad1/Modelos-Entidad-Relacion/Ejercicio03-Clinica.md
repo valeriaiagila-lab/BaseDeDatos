@@ -81,6 +81,12 @@ Create Table Incluye (
 ```
 
 ---
+## 🖼️ 5. Base de datos creada
+----
+
+<img width="232" height="223" alt="ejer2" src="https://github.com/user-attachments/assets/56ea7a9d-1f3f-44d4-825d-8b64af915842" />
+
+---
 
 
 [⬅️ Volver al índice de modelos](Modelos.md)
