@@ -70,6 +70,12 @@ Create Table Suministra (
 ```
 
 ---
+## 🖼️ 5. Base de datos creada
+---
+
+<img width="292" height="209" alt="ejer6" src="https://github.com/user-attachments/assets/b5555973-0dbe-4dd5-b4a0-572236d72cd4" />
+
+----
 
 
 [⬅️ Volver al índice de modelos](Modelos.md)
