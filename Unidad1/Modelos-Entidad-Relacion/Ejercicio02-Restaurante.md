@@ -75,6 +75,11 @@ Create Table Detalle_pedido (
 ```
 
 ---
+## 🖼️ 5. Base de datos creada
+<img width="232" height="223" alt="ejer2" src="https://github.com/user-attachments/assets/fbd40d54-f3f0-4022-8d50-127de20db5af" />
+
+
+---
 
 
 
