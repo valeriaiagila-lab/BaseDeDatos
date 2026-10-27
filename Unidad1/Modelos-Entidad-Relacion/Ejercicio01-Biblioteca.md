@@ -66,7 +66,13 @@ Create Table Prestamo (
 );
 
 ```
+## 🖼️ 5. Base de datos creada 
 
+<img width="215" height="213" alt="ejer1" src="https://github.com/user-attachments/assets/acf1d02e-f207-40de-a606-d99fcd3c528b" />
+
+
+
+ 
 ---
 
 
