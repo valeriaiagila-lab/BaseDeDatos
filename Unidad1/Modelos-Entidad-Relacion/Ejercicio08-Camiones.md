@@ -75,7 +75,6 @@ Create Table Conduce (
 
 ---
 ## 🖼️ 5. Base de datos creada
----
 
 <img width="378" height="270" alt="ejer8" src="https://github.com/user-attachments/assets/de29ca1d-72d4-48b4-bf23-b0865edfbf95" />
 
