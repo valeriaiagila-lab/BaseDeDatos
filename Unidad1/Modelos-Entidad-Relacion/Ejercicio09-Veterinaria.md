@@ -114,6 +114,11 @@ Create Table Consulta (
 ```
 
 ---
+## 🖼️ 5. Base de datos creada
+
+ <img width="252" height="258" alt="ejer9" src="https://github.com/user-attachments/assets/162b0d1f-2c17-4058-bb93-f8258747d7c4" />
+
+---
 
 
 [⬅️ Volver al índice de modelos](Modelos.md)
