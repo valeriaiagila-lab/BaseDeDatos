@@ -17,7 +17,7 @@ gráficamente la estructura de una base de datos.
 
 - [📘 Contenido teórico y ejercicios](Modelos-Entidad-Relacion/Modelos.md)
 
-- [📘 Evaluació de Unidad ](Examen/Examen.md)
+- [📘 Evaluación de Unidad ](Examen/Examen.md)
 ---
 
 ⬅️ [Volver al índice principal](../README.md)
