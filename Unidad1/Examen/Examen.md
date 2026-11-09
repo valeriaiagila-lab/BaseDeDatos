@@ -100,7 +100,9 @@ A continuación se presenta el mismo modelo en formato de tablas, elaborado con 
 ***Figura 3. Modelo relacional del sistema de cine en formato de tablas (draw.io).***
 
 </div>
+
 [Modelos relacionales](https://drive.google.com/file/d/1lX7x7jFPMq9autfR8oq8POBZ2I4rGRvg/view?usp=sharing)
+
 ---
 
 ## 💻 CÓDIGO SQL
