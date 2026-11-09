@@ -23,7 +23,6 @@
 | 🎯 **Resultado de aprendizaje de la unidad** | Modela bases de datos de problemas reales, bajo los principios de solidaridad, transparencia, responsabilidad y honestidad. |
 | 👨‍🏫 **Nombre del Docente** | Edwin René Guamán Quinche |
 | 📅 **Fecha** | 05/11/2026 |
-| 🔗 **Enlace de Git** | |
 | 🧑‍🎓 **Nombres y apellidos del estudiante** | Valeria Idaly Agila Gomez |
 
 ---
@@ -72,7 +71,7 @@ El diagrama Entidad-Relación se elaboró con la notación de Chen [4]. Las enti
 
 <div align="center">
 
-![Figura 1. Diagrama Entidad-Relación del sistema de gestión de un cine](images/figura1-diagrama-er.png)
+<img width="652" height="499" alt="figura1-diagrama-er" src="https://github.com/user-attachments/assets/2d2b965d-a687-42df-b1a6-be91469a8a1c" />
 
 ***Figura 1. Diagrama Entidad-Relación del sistema de gestión de un cine (caso Cinemas In, Loja).***
 
@@ -84,7 +83,7 @@ El modelo relacional se obtuvo a partir del diagrama E-R [3]. Cada entidad se co
 
 <div align="center">
 
-![Figura 2. Modelo relacional del sistema de cine en notación de relaciones](images/figura2-modelo-relacional.png)
+<img width="608" height="482" alt="modelo relacional 1" src="https://github.com/user-attachments/assets/5626a19a-cf66-4467-8291-506ef209177b" />
 
 ***Figura 2. Modelo relacional del sistema de cine en notación de relaciones.***
 
@@ -94,7 +93,7 @@ A continuación se presenta el mismo modelo en formato de tablas, elaborado con 
 
 <div align="center">
 
-![Figura 3. Modelo relacional en formato de tablas (draw.io)](images/figura3-modelo-drawio.png)
+<img width="1006" height="505" alt="Modelo Relacional 2" src="https://github.com/user-attachments/assets/b3b73af4-c94d-4fba-accc-becf1a235f49" />
 
 ***Figura 3. Modelo relacional del sistema de cine en formato de tablas (draw.io), en blanco y negro.***
 
