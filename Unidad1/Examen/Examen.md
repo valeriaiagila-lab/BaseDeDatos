@@ -77,6 +77,8 @@ El diagrama Entidad-Relación se elaboró con la notación de Chen [4]. Las enti
 
 </div>
 
+[Diagrama relacional](https://drive.google.com/file/d/1ldkm6m07g3NT5G3I4s4LAPtPhiWHNfeV/view?usp=sharing)
+
 ### 🔶 4.2. Modelo Relacional
 
 El modelo relacional se obtuvo a partir del diagrama E-R [3]. Cada entidad se convirtió en una tabla y cada relación 1:N se resolvió colocando una clave foránea (FK) en la tabla del lado N. La relación REPARTO, de tipo M:N, se resolvió con una tabla intermedia del mismo nombre, cuya clave primaria está formada por id_pelicula e id_actor y que conserva el atributo papel. El atributo derivado asientos_disponibles no se almacena, porque puede calcularse restando, a la capacidad de la sala, los boletos vendidos de la función. En total resultan ocho tablas: siete provenientes de las entidades y una intermedia. Las claves foráneas son siete: PELICULA.id_genero → GENERO; REPARTO.id_pelicula → PELICULA; REPARTO.id_actor → ACTOR; FUNCION.id_pelicula → PELICULA; FUNCION.id_sala → SALA; BOLETO.id_funcion → FUNCION y BOLETO.id_cliente → CLIENTE.
@@ -98,7 +100,7 @@ A continuación se presenta el mismo modelo en formato de tablas, elaborado con 
 ***Figura 3. Modelo relacional del sistema de cine en formato de tablas (draw.io).***
 
 </div>
-
+[Modelos relacionales](https://drive.google.com/file/d/1lX7x7jFPMq9autfR8oq8POBZ2I4rGRvg/view?usp=sharing)
 ---
 
 ## 💻 CÓDIGO SQL
