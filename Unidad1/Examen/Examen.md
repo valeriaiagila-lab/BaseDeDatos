@@ -95,7 +95,7 @@ A continuación se presenta el mismo modelo en formato de tablas, elaborado con 
 
 <img width="1006" height="505" alt="Modelo Relacional 2" src="https://github.com/user-attachments/assets/b3b73af4-c94d-4fba-accc-becf1a235f49" />
 
-***Figura 3. Modelo relacional del sistema de cine en formato de tablas (draw.io), en blanco y negro.***
+***Figura 3. Modelo relacional del sistema de cine en formato de tablas (draw.io).***
 
 </div>
 
