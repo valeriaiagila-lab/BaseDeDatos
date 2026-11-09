@@ -541,6 +541,12 @@ ORDER BY c.id_cliente;
 
 [3] A. Silberschatz, H. F. Korth y S. Sudarshan, *Database System Concepts*, 7.ª ed. Nueva York, NY, EE. UU.: McGraw-Hill Education, 2020. ISBN: 978-0-07-802215-9.
 
+---
+
+
+[⬅️ Volver al índice de modelos](Modelos.md)
+
+
 [4] P. P.-S. Chen, «The entity-relationship model—Toward a unified view of data,» *ACM Trans. Database Syst.*, vol. 1, n.º 1, pp. 9–36, mar. 1976, doi: 10.1145/320434.320440.
 
 [5] Oracle Corporation, «MySQL 8.4 Reference Manual: 15.2.8 INTERSECT Clause.» [En línea]. Disponible en: https://dev.mysql.com/doc/refman/8.4/en/intersect.html. [Accedido: 5-nov-2026].
